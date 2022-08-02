@@ -2,8 +2,9 @@
   padding-bottom: 1em;
   
   .number-grid {
+    justify-content: center;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 3em);
     grid-gap: 4px;
     margin: 4px 16px;
   }

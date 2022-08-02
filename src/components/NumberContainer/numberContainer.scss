@@ -8,6 +8,8 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  max-width: 52px;
+  max-height: 52px;
   
   &:hover {
     cursor: pointer;
@@ -16,6 +18,14 @@
   &.clicked {
     pointer-events: none;
     opacity: 50%;
+
+    &.correct {
+      background-color: green;
+    }
+
+    &.incorrect {
+      background-color: red;
+    }
   }
 
   .dozen {
