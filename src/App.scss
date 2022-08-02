@@ -1,0 +1,22 @@
+* {
+  outline: none;
+  touch-action: manipulation;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #282c34;
+}
+
+#root {
+  height: 100%;
+}
+
+.numbers-game {
+  text-align: center;
+  height: 100%;
+}
