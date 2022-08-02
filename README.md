@@ -1,17 +1,29 @@
-# numbers-game
-This is the first project I ever made when working for a school. By the time I was still a student and didn't know much so there is a lot to be fixed in here. I decided to remake this project using the knowledge I have nowadays because I remember having fun while doing it.
+# About The Game
+The original version of this game was played during classes using the blackboard. This is meant to be a digital version of this game, to be played on an iPad.
 
-The `bot.js` file was meant to be used as a testing method for the progress of the game as it does all the clicking on it's own.
+## The Goal
+The main goal of this game is to teach kids the numeric order and also teach them about the unit / dozen division in the numbers. I have recieved feedback that this game helped accelerate the learning from 6 to 3 months.
 
-To avoid any complications I am removing any image related to that school, so some images will be broken. But this will be fixed as I work in the new version as well as moving everything to english.
+### Design
+The original game was designed by the design team of the company I was at the time. This remake takes heavy inspiration from [term.ooo](https://term.ooo/) (the brazillian version of [Wordle](https://www.nytimes.com/games/wordle/index.html)). I have also removed anything that relates to that company to avoid complications.
 
-I'm also using this project as proof that I can work with tags in the current company I am.
+### About The Project
+This was the very first project I have ever made and I wanted to lookback and update the code with my current knowledge. I remember this being very fun to work with and the feedback that it worked to help kids learn faster made me very happy, so I hope this is useful to someone who ends up here.
+The original site is not responsive, layouts are broken and there is a lot that can be improved. I'm slowly making changes to this repo to update the code and make it as best as I can.
 
-## about
-This game is meant to be used to teaching kids into learning the numeric order and also to understand how dozens work. It was meant to be played on an iPad.
+### Running The Project
+To run this project you'll need to have [NodeJS](https://nodejs.org/en/download/) installed.
+Clone this repo and run `npm install` to install all dependencies and then `npm run start` to start development mode.
 
-Since the game itself lacks instructions as the ones who were going to play were taught it in class, I'm leaving some basic instructions here:
+There is a lot of overkill for such a small project. This is just because I am refreshing my knowledge on the stack.
 
-You start by picking up the range of numbers you want to work with. Then it will lead you to a new screen with all the numbers from that range sorted into a random order and you have to click it in order. If you fail to follow the order the game ends, and if you succeed you win.
+### Roadmap
+I still don't know how to make a good roadmap, so I'm leaving it as a bullet list for now.
 
-It is a very basic game. For now I'm just making it functional again, and then I'll work on improvements.
+- Remake all the basic functionalities that were working on the original game (80%)
+- Refactor CSS and Components
+- Implement some sort of session / storage (either local storage or Redux)
+- Add instructions and options
+- Verify color contrast
+- Button to toggle theme / language 
+- Score (?)
