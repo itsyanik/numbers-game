@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import NumberContainer from '../../components/NumberContainer/numberContainer.tsx';
 import Header from './../../components/Header/header.tsx';
 import shuffle from '../../helpers/shuffle';
@@ -7,8 +7,9 @@ import './game.scss';
 const Game = ({ config }) => {
   const { numberQty } = config ;
 
-  const numbersArray = [];
   const [clickCount, setClickCount] = useState(0);
+  const [shuffledArray, setShuffledArray] = useState([]);
+  const numbersArray = useMemo(() => [], [shuffledArray]);
 
   // can't use regular loop inside JSX
   // so have to fill an array before looping.
@@ -23,17 +24,21 @@ const Game = ({ config }) => {
   const updateCounter = function () {
     const counter = clickCount + 1;
     setClickCount(counter);
-  }
+  };
 
   fillNumbersArray();
-  const shuffled = shuffle(numbersArray);
+
+  useEffect(() => {
+    const shuffled = shuffle(numbersArray);
+    setShuffledArray(shuffled);
+  }, []);
 
   return (
     <React.Fragment>
       <Header />
       <div className='game'>
         <div className='number-grid'>
-          {shuffled.map((number) => {
+          {shuffledArray.map((number) => {
             return (
               <NumberContainer 
                 number={number} 
