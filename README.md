@@ -4,6 +4,12 @@ The original version of this game was played during classes using the blackboard
 ## The Goal
 The main goal of this game is to teach kids the numeric order and also teach them about the unit / dozen division in the numbers. I have recieved feedback that this game helped accelerate the learning from 6 to 3 months.
 
+## How To Play
+Select a range of numbers to work with from 30 up to 100 (by default the game uses 30). The game will then randomize how they're displayed on your screen.
+The goal is to simply click on the numbers in numeric order, starting from zero. If you succeed the background turns green, else it turns red. After interacting with any cell they become unclickable and the opacity is set to 50% to facilitate visualization.
+
+Have fun!
+
 ### Design
 The original game was designed by the design team of the company I was at the time. This remake takes heavy inspiration from [term.ooo](https://term.ooo/) (the brazillian version of [Wordle](https://www.nytimes.com/games/wordle/index.html)). I have also removed anything that relates to that company to avoid complications.
 
@@ -27,3 +33,4 @@ I still don't know how to make a good roadmap, so I'm leaving it as a bullet lis
 - Verify color contrast
 - Button to toggle theme / language 
 - Score (?)
+- Support for keyboard and screenreaders
