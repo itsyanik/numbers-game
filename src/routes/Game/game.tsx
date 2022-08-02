@@ -1,6 +1,7 @@
 import React from 'react';
 import NumberContainer from '../../components/NumberContainer/numberContainer.tsx';
 import Header from './../../components/Header/header.tsx';
+import shuffle from '../../helpers/shuffle';
 import './game.scss';
 
 const Game = ({ config }) => {
@@ -19,22 +20,6 @@ const Game = ({ config }) => {
   }
 
   fillNumbersArray();
-
-  // Fischer Yates Shuffle
-  function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
-  
-    while (currentIndex !== 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      [array[currentIndex], array[randomIndex]] = [
-        array[randomIndex], array[currentIndex]
-      ];
-    }
-  
-    return array;
-  }
 
   const shuffled = shuffle(numbersArray)
 
