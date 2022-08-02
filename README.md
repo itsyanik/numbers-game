@@ -8,10 +8,10 @@ To avoid any complications I am removing any image related to that school, so so
 I'm also using this project as proof that I can work with tags in the current company I am.
 
 ## about
-This game is meant to be used to teaching kids into learning the numeric order and also to understand how dozens work. 
+This game is meant to be used to teaching kids into learning the numeric order and also to understand how dozens work. It was meant to be played on an iPad.
 
 Since the game itself lacks instructions as the ones who were going to play were taught it in class, I'm leaving some basic instructions here:
 
 You start by picking up the range of numbers you want to work with. Then it will lead you to a new screen with all the numbers from that range sorted into a random order and you have to click it in order. If you fail to follow the order the game ends, and if you succeed you win.
 
-It is a very basic game.
+It is a very basic game. For now I'm just making it functional again, and then I'll work on improvements.
