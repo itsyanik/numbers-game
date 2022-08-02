@@ -1,0 +1,19 @@
+.number-container {
+  aspect-ratio: 1;
+  border: 0.125em solid #26337f;
+  border-radius: 10%;
+  font-weight: 600;
+  font-size: 1em;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+
+  .dozen {
+    color: hotpink;
+  }
+
+  .unit {
+    color: burlywood;
+  }
+}
