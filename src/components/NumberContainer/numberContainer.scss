@@ -8,6 +8,15 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.clicked {
+    pointer-events: none;
+    opacity: 50%;
+  }
 
   .dozen {
     color: hotpink;

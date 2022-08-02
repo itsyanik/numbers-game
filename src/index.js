@@ -8,12 +8,17 @@ import App from './App.tsx';
 import Game from './routes/Game/game.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const config = {
+  numberQty: 30
+};
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}/>
-        <Route path='/game' element={<Game />}/>
+        <Route path='/game' element={<Game config={config}/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

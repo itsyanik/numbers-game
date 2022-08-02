@@ -1,6 +1,7 @@
 .game {
   padding-bottom: 1em;
-  .number-row {
+  
+  .number-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 4px;
@@ -10,6 +11,7 @@
 
 footer {
   text-align: center;
+  text-transform: uppercase;
 
   a {
     font-size: 1em;
