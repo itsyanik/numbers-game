@@ -1,0 +1,38 @@
+.number-container {
+  aspect-ratio: 1;
+  border: 0.125em solid #26337f;
+  border-radius: 10%;
+  font-weight: 600;
+  font-size: 1em;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  max-width: 52px;
+  max-height: 52px;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.clicked {
+    pointer-events: none;
+    opacity: 50%;
+
+    &.correct {
+      background-color: green;
+    }
+
+    &.incorrect {
+      background-color: red;
+    }
+  }
+
+  .dozen {
+    color: hotpink;
+  }
+
+  .unit {
+    color: burlywood;
+  }
+}
