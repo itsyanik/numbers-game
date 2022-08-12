@@ -1,24 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import { config } from './config';
+import './index.scss';
 
 import App from './App.tsx';
 import Game from './routes/Game/game.tsx';
+import Options from './routes/Options/options.tsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-const config = {
-  numberQty: 30
-};
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}/>
+        <Route path='/' element={<App config={config}/>}/>
         <Route path='/game' element={<Game config={config}/>}/>
+        <Route path='/options' element={<Options config={config}/>}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

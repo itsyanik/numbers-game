@@ -1,14 +1,14 @@
 import React from 'react';
-import './App.scss';
 import Header from './components/Header/header.tsx';
 import Menu from './components/Menu/menu.tsx';
+import './App.scss';
 
-function App() {
+function App({ config }) {
   return (
     <React.Fragment>
       <Header />
       <div className="numbers-game">
-        <Menu />
+        <Menu config={config} />
       </div>
     </React.Fragment>
   );

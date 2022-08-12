@@ -3,15 +3,22 @@ import { Link } from "react-router-dom";
 
 import './menu.scss';
 
-const Menu = () => {
+const Menu = ({ config }) => {
+  const { menuEntries } = config;
+  
   return (
-    <section className="menu">
+    <section id="menu">
       <ul>
-        <li>
-          <Link to="/game">Start</Link>
-        </li>
-        <li>Instructions</li>
-        <li>Options</li>
+        {menuEntries.map((entry, idx) => {
+          const entryKey = Object.keys(entry)[0];
+          const { linkTo, text } = entry[entryKey];
+          
+          return (
+            <li key={idx}>
+              <Link to={linkTo}>{text}</Link>
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

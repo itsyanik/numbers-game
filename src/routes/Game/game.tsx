@@ -5,7 +5,9 @@ import shuffle from '../../helpers/shuffle';
 import './game.scss';
 
 const Game = ({ config }) => {
-  const { numberQty } = config ;
+  const { options } = config;
+  const { numberQty } = options;
+  const { total: qty } = numberQty;
 
   const [clickCount, setClickCount] = useState(0);
   const [shuffledArray, setShuffledArray] = useState([]);
@@ -16,7 +18,7 @@ const Game = ({ config }) => {
   // the numbers shouldn't go higher than 100
   // so this shouldn't be a performance hit.
   const fillNumbersArray = function () {
-    for (let i = 0; i <= numberQty; i++) {
+    for (let i = 0; i <= qty; i++) {
       numbersArray.push(i);
     };
   };
